@@ -1,0 +1,153 @@
+/* login css here */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&family=Roboto:400,500');
+
+body.login { 
+	background-image:url("../images/home-banner.jpg");
+	background-repeat:no-repeat;
+	background-position:top center;
+	background-size: cover;
+	position:relative;
+}
+body.login::before 
+{
+	display:block;
+	content:"";
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:1;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,.4);
+}
+body.login #login { width:460px; position:relative; z-index:2;}
+
+body.login div#login h1 a {
+    background-image: url("../images/ggt-logo-2x.png");
+	background-size: 168px 72px;
+	width:168px;
+	height:72px;
+}
+body.login form p, body.login .dashicons-before::before
+{
+	color:#ffffff !important;	
+}
+body.login form .itsec-recaptcha-opt-in p, body.login form label.itsec-recaptcha-opt-in__agree
+{
+	color:#000000 !important;
+}
+body.login div#login form#loginform input {
+	font-family: 'Montserrat', san-serif;
+}
+
+body.login #login form p { margin-bottom: 15px;}
+
+body.login form { background: rgba(0, 0, 0, 0.2); padding:40px 50px 40px 50px;}
+
+body.login label { color:#fff;}
+body.login div#login form#loginform input[type=text],
+body.login div#login form#loginform input[type=password]{
+	padding:12px 16px;
+}
+
+body.login div#login form#loginform input#wp-submit {
+    background-color: #005c7a;
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 36px 2px;
+    text-shadow: none;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+body.login div#login form#loginform input#wp-submit:hover { 
+	background-color: #005c7a;
+	color:#ffffff;
+	opacity:.8;
+}
+
+.login #backtoblog a, .login #nav a, .privacy-policy-page-link a {
+	color:#fff;
+}
+.login #backtoblog a:hover, .login #nav a:hover, .privacy-policy-page-link a:hover
+{
+	color:#ffffff;
+	opacity:.8;
+}
+p.custom-footer-link {
+	width: 320px;
+    padding: 10px 0 0;
+    margin: 30px auto 0 auto;
+	color:#aaa;
+	text-align: center;
+	position:relative;
+	z-index:3;
+}
+p.custom-footer-link a {
+	text-decoration: none;
+}
+.indicator-hint 
+{
+	color:#ffffff;
+}
+.itsec-screen-container h2, .itsec-screen-container h3, .itsec-screen-container p
+{
+	color:#ffffff;
+}
+#itsec-2fa p
+{
+	font-family: 'Montserrat', san-serif;
+	color:#fff;
+}
+#itsec-2fa a 
+{
+	font-family: 'Montserrat', san-serif;
+	color:#fff;
+}
+#itsec-2fa a:hover 
+{
+	color:#135e96;
+}
+#itsec-2fa input[type="submit"]
+{
+	background-color: #00a1db;
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 36px 2px;
+    text-shadow: none;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	margin-bottom:10px;
+}
+a.renewal-link 
+{
+	color:#FFFFFF;
+	position:absolute;
+	top:100%;
+	margin-top:-54px;
+	right:0;
+	text-decoration: none;
+	margin-right:24px;
+}
+a.renewal-link:hover 
+{
+	color:#FFFFFF;
+	opacity:.8;
+}
+@media all and (max-width:767px){  
+
+body.login #login { width:300px;}
+body.login form { padding:20px;}
+body.login div#login form#loginform input[type=text],
+body.login div#login form#loginform input[type=password]{
+	padding:6px 8px;
+}	
+}

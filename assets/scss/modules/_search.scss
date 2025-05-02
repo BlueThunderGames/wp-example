@@ -1,0 +1,272 @@
+.search-results-wrapper 
+{
+    h2 
+    {
+        margin:0 0 48px 0;
+    }
+    form 
+    {
+        position:relative;
+        max-width:100%;
+        margin:0 auto 100px auto;
+
+        label 
+        {
+            position:absolute;
+            left:-9999px;
+        }
+        input[type="text"]
+        {
+            @include fontSemi;
+            color:$greatGray;
+            position:relative;
+            z-index:2;
+            border:1px solid #C0C0C0;
+            background-color:#F9F9F9;
+            outline:none;
+            box-shadow: none;
+            width:100%;
+            margin-bottom:0;
+            border-radius:10px;
+            padding-left:25px;
+            padding-right:320px;
+            font-size:22px;
+            line-height:1.63;
+            height:72px;
+            letter-spacing:.22px;
+        }
+        input[type="text"]::placeholder 
+        {
+            color:$greatGray;
+            font-size:22px;
+        }
+        button[type="submit"]
+        {
+            @include transition;
+            @include fontReg;
+            @include uppercase;
+            letter-spacing:.15px;
+            font-size:15px;
+            line-height:1.06;
+            text-align:center;
+            display:block;
+            position:absolute;
+            right:12px;
+            top:50%;
+            transform: translateY(-50%);
+            z-index:4;
+            cursor: pointer;
+            background-color:$robin;
+            color:#FFFFFF;
+            width:229px;
+            text-align:center;
+            border-radius:8px;
+            padding:18px 10px 17px 10px;
+        }
+        button[type="submit"]:hover 
+        {
+            background-color:$flamingo;
+            color:#FFFFFF;
+        }
+        a.clear-search
+        {
+            @include transition;
+            display:block;
+            position:absolute;
+            z-index:4;
+            top:50%;
+            transform:translateY(-50%);
+            right:273px;
+            height:34px;
+        }
+        a.clear-search:hover
+        {
+            opacity:.8;
+        }
+    }
+    .searchResult
+    {
+        margin-bottom:10px;
+    }
+    .searchResult:nth-child(odd)
+    {
+        .search-result-link
+        {
+            background-color:$raven;
+        }
+    }
+    .searchResult:nth-child(even)
+    {
+        .search-result-link
+        {
+            background-color:$raven;
+        }
+    }
+    .search-result-link 
+    {
+        @include transition;
+        display:block;
+        padding:61px 107px 54px 60px;
+        text-decoration:none;
+        text-transform: none;
+
+        .post-title 
+        {
+            @include fontSemi;
+            display:block;
+            font-size:28px;
+            line-height:1.28;
+            letter-spacing: 0.28px;
+            color:$robin;
+            margin-bottom:34px;
+        }
+        .post-excerpt, .excerpt_part
+        {
+            @include fontReg;
+            font-size:18px;
+            line-height:1.78;
+            letter-spacing: .18px;
+            color:#F7F6FB;
+            text-transform: none;
+        }
+        mark 
+        {
+            color:$greatGray;
+            background-color:#FFBF2B;
+        }
+    }
+}
+@media screen and (min-width:1294px) and (max-width:1600px)
+{
+    .search-results-wrapper h2
+    {
+        margin:0 0 30px 0;
+    }
+    .search-results-wrapper form
+    {
+        margin:0 auto 60px auto;
+    }
+    .search-results-wrapper .search-result-link
+    {
+        padding:41px 107px 34px 60px;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1293px)
+{
+    .search-results-wrapper h2
+    {
+        margin:0 0 30px 0;
+    }
+    .search-results-wrapper form
+    {
+        margin:0 auto 60px auto;
+    }
+    .search-results-wrapper .search-result-link
+    {
+        padding:41px 107px 34px 60px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1099px)
+{
+    .search-results-wrapper h2
+    {
+        margin:0 0 30px 0;
+    }
+    .search-results-wrapper form
+    {
+        margin:0 auto 60px auto;
+    }
+    .search-results-wrapper .search-result-link
+    {
+        padding:41px 107px 34px 60px;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .search-results-wrapper h2
+    {
+        margin:0 0 30px 0;
+    }
+    .search-results-wrapper form
+    {
+        margin:0 auto 60px auto;
+    }
+    .search-results-wrapper .search-result-link
+    {
+        padding:41px 50px 34px 50px;
+    }
+    .search-results-wrapper form input[type=text]
+    {
+        padding-left:25px;
+    }
+    .search-results-wrapper .search-result-link .post-title
+    {
+        margin-bottom:26px;
+    }
+}
+@media screen and (min-width:560px) and (max-width:720px)
+{
+    .search-results-wrapper .search-result-link .post-title
+    {
+        font-size:24px;
+    }
+    .search-results-wrapper .search-result-link .post-excerpt, .search-results-wrapper .search-result-link .excerpt_part
+    {
+        font-size:16px;
+    }
+    .search-results-wrapper .search-result-link
+    {
+        padding:41px 35px 34px 35px;
+    }
+    .search-results-wrapper form a.clear-search
+    {
+        display:none;
+    }
+    .search-results-wrapper form button[type=submit]
+    {
+        width:135px;
+        font-size:13px;
+    }
+    .search-results-wrapper form input[type=text]
+    {
+        padding-right:160px;
+        font-size:18px;
+    }
+    .search-results-wrapper form input[type=text]::placeholder
+    {
+        font-size:18px;
+    }
+}
+@media screen and (max-width:559px)
+{
+    .search-results-wrapper .search-result-link .post-title
+    {
+        font-size:24px;
+    }
+    .search-results-wrapper .search-result-link .post-excerpt, .search-results-wrapper .search-result-link .excerpt_part
+    {
+        font-size:16px;
+    }
+    .search-results-wrapper .search-result-link
+    {
+        padding:41px 30px 34px 30px;
+    }
+    .search-results-wrapper form a.clear-search
+    {
+        display:none;
+    }
+    .search-results-wrapper form button[type=submit]
+    {
+        width:135px;
+        font-size:13px;
+    }
+    .search-results-wrapper form input[type=text]
+    {
+        padding-right:160px;
+        font-size:18px;
+    }
+    .search-results-wrapper form input[type=text]::placeholder
+    {
+        font-size:18px;
+    }
+}

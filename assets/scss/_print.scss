@@ -1,0 +1,144 @@
+@media print
+{
+    body, body:not(.home)
+    {
+        padding:40px 40px 0 40px;
+    }
+    .detail-container
+    {
+        padding:0 0 0 0;
+    }
+    .detail-container .detail-upper, .detail-container .detail-content-wrapper .video, .footer-container, .detail-container .detail-lower
+    {
+        display:none;
+    }
+    a:not(.desktop-logo)[href]:after
+	{
+    	content: none !important;
+  	}
+	a[href]:after
+	{
+		color:transparent !important;
+	}
+    .header-container .lower-header .desktop-menu
+    {
+        display: none;
+    }
+    .header-container .trim-menu-wrapper
+    {
+        display: none;
+    }
+    .header-container .logo-light, .header-container .menu-wrapper, .header-container .search-wrapper, .footer-container
+    {
+        display:none;
+    }
+    .header-container .logo-dark
+    {
+        display:block;
+    }
+    .header-container .header-logo
+    {
+        background-size: 251px 81px !important;
+        background-image: url("../images/header-logo-2x.png") !important;
+        background-repeat: no-repeat !important;
+    }
+    blockquote
+    {
+        border:none;
+    }
+    .header-container .header-logo-wrapper
+    {
+        padding:0 0 0 0;
+    }
+    .detail-container
+    {
+        padding:30px 0 60px 0;
+        .detail-content-wrapper
+        {
+            padding-right: 0 !important;
+        }
+    }
+    .detail-container .detail-upper
+    {
+        display:none;
+    }
+    h1
+    {
+        font-size:58px !important;
+        letter-spacing:.58px;
+        line-height:1.2;
+        color:#2F3942 !important;
+    }
+    h2
+    {
+        font-size:36px;
+        line-height:1.2;
+        color:#2F3942 !important;
+
+    }
+    h3
+    {
+        font-size:25px;
+        line-height:1.2;
+        color:#2F3942 !important;
+    }
+    h4
+    {
+        @include uppercase;
+        font-size:15px;
+        line-height:2.0;
+        letter-spacing:0.15px;
+        color:#2F3942 !important;
+    }
+    p
+    {
+        @include fontReg;
+        font-size:18px;
+        line-height:1.66;
+        color:#2F3942 !important;
+    }
+    ul
+    {
+        li
+        {
+            @include fontReg;
+            font-size:18px;
+            line-height:1.66;
+            color:#2F3942 !important;
+        }
+    }
+    ol
+    {
+        li
+        {
+            @include fontReg;
+            font-size:18px;
+            line-height:1.66;
+            color:#2F3942 !important;
+        }
+    }
+    a.btn-primary
+    {
+        color:#FFFFFF !important;
+        text-decoration: none !important;
+    }
+    .detail-container .detail-content-wrapper .date
+    {
+        color: #2F3942 !important;
+    }
+    .detail-container .detail-content-wrapper .tags-list > li > a
+    {
+        text-decoration: none;
+        color:#F7F6FB !important;
+        background-color:#336D81 !important;
+    }
+    .detail-container .detail-sidebar-wrapper
+    {
+        display:none;
+    }
+    .detail-container .detail-content-wrapper
+    {
+        width:100%;
+        padding-right:0;
+    }
+}

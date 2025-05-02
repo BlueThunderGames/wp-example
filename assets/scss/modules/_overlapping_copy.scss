@@ -1,0 +1,76 @@
+.overlapping-copy-container
+{
+    padding:88px 0 61px 0;
+    position:relative;
+    bottom:-67px;
+    margin-top:-67px;
+    z-index:4;
+
+    .copy-wrapper
+    {
+        width:832px;
+        max-width:100%;
+        margin:0 auto 0 auto;
+        position:relative;
+        z-index:5;
+    }
+    .background
+    {
+        position:absolute;
+        z-index:4;
+        top:0;
+        left:0;
+        height:100%;
+        width:81%;
+        background-color:$raven;
+        border-radius: 0px 0 60px 0;
+    }
+    .btn 
+    {
+        margin-top:40px;
+    }
+}
+@media screen and (min-width:1296px) and (max-width:1600px)
+{
+    .overlapping-copy-container .background
+    {
+        width:85%;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1295px)
+{
+    .overlapping-copy-container .background
+    {
+        width:92%;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1099px)
+{
+    .overlapping-copy-container .background
+    {
+        width:95%;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .overlapping-copy-container .background
+    {
+        width:95%;
+    }
+    .overlapping-copy-container .copy-wrapper
+    {
+        padding:0 5%;
+    }
+}
+@media screen and (min-width:721px) and (max-width:899px)
+{
+
+}
+@media screen and (min-width:560px) and (max-width:720px)
+{
+
+}
+@media screen and (max-width:559px)
+{
+    
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+ Theme Name: Great Gray Trust
+ Author: Chariot Creative
+ Description: Great Gray Trust WordPress Theme
+ Version: 0.0.1
+*/
+/* General Styles / Header & Footer Styles */
+.clear
+{
+  display:block;
+  clear:both;	
+}

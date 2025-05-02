@@ -1,0 +1,228 @@
+.overlapping-img-container
+{
+    background-color:#F7F6FB;
+    padding:100px 0 100px 0;
+    position:relative;
+    z-index:5;
+    
+    h2, h3, h4, h5 
+    {
+        margin:0 0 25px 0;
+    }
+    h3, h4, h5, p, ul li, ol li 
+    {
+        color:#2F3942;
+    }
+    .left-col 
+    {
+        position:relative;
+    }
+    .right-col 
+    {
+        position:relative;
+    }
+    .left-col.img 
+    {
+        width:54%;
+
+        .img-wrapper 
+        {
+            position:relative;
+            top:26px;
+            left:0;
+
+            img 
+            {
+                max-width:118% !important;
+            }
+        }
+    }
+    .right-col.copy-column 
+    {
+        width:46%;
+    }
+    .right-col.img 
+    {
+        width:54%;
+
+        .img-wrapper 
+        {
+            position:relative;
+            top:26px;
+            right:0;
+
+            img 
+            {
+                max-width:118% !important;
+            }
+        }
+    }
+    .left-col.copy-column 
+    {
+        width:46%;
+    }
+    .btn 
+    {
+        margin-top:25px;
+    }
+}
+@media screen and (min-width:1296px) and (max-width:1600px)
+{
+    .overlapping-img-container
+    {
+        padding:75px 0 75px 0;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1295px)
+{
+    .overlapping-img-container
+    {
+        padding:75px 0 75px 0;
+    }
+    .overlapping-img-container .left-col.img 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .right-col.copy-column 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .right-col.img 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .left-col.copy-column 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .left-col.img .img-wrapper
+    {
+        top:56px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1099px)
+{
+    .overlapping-img-container
+    {
+        padding:75px 0 75px 0;
+    }
+    .overlapping-img-container .left-col.img 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .right-col.copy-column 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .right-col.img 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .left-col.copy-column 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .left-col.img .img-wrapper
+    {
+        top:56px;
+    }
+    .overlapping-img-container .left-col.img .img-wrapper img
+    {
+        max-width:130% !important;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .overlapping-img-container
+    {
+        padding:55px 0 55px 0;
+    }
+    .overlapping-img-container .left-col.img 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .right-col.copy-column 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .right-col.img 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .left-col.copy-column 
+    {
+        width:50%;
+    }
+    .overlapping-img-container .left-col.img .img-wrapper
+    {
+        top:56px;
+    }
+    .overlapping-img-container .left-col.img .img-wrapper img
+    {
+        max-width:130% !important;
+    }
+}
+@media screen and (min-width:721px) and (max-width:899px)
+{
+    
+}
+@media screen and (min-width:560px) and (max-width:720px)
+{
+    .overlapping-img-container .left-col.img .img-wrapper
+    {
+        top:0;
+
+        img 
+        {
+            max-width:100% !important;
+        }
+    }
+    .overlapping-img-container .left-col.img 
+    {
+        width:100%;
+        margin-bottom:30px;
+    }
+    .overlapping-img-container .right-col.copy-column 
+    {
+        width:100%;
+    }
+    .overlapping-img-container .right-col.img 
+    {
+        width:100%;
+        margin-top:30px;
+    }
+    .overlapping-img-container .left-col.copy-column 
+    {
+        width:100%;
+    }
+}
+@media screen and (max-width:559px)
+{
+    .overlapping-img-container .left-col.img .img-wrapper
+    {
+        top:0;
+
+        img 
+        {
+            max-width:100% !important;
+        }
+    }
+    .overlapping-img-container .left-col.img 
+    {
+        width:100%;
+        margin-bottom:30px;
+    }
+    .overlapping-img-container .right-col.copy-column 
+    {
+        width:100%;
+    }
+    .overlapping-img-container .right-col.img 
+    {
+        width:100%;
+        margin-top:30px;
+    }
+    .overlapping-img-container .left-col.copy-column 
+    {
+        width:100%;
+    }
+}

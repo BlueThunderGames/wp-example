@@ -1,0 +1,71 @@
+.notice-container 
+{
+    padding:100px 0 92px 0;
+
+    .copy-container 
+    {
+        h2, h3, h4, h5, h6, p, ul li, ol li, span 
+        {
+            color:inherit;
+        }
+        h2, h3, h4, h5, h6
+        {
+            margin:0 0 41px 0;
+        }
+        span 
+        {
+            font-family:inherit;
+            font-size:inherit;
+            line-height:inherit;
+            font-weight:inherit;
+        }
+    }
+    p, ul, ol 
+    {
+        margin-bottom:16px;
+    }
+}
+@media screen and (min-width:1296px) and (max-width:1600px)
+{
+    .notice-container
+    {
+        padding:70px 0 62px 0;
+    }
+    .notice-container .copy-container h2, .notice-container .copy-container h3, .notice-container .copy-container h4, .notice-container .copy-container h5, .notice-container .copy-container h6
+    {
+        margin:0 0 30px 0;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1295px)
+{
+    .notice-container
+    {
+        padding:70px 0 62px 0;
+    }
+    .notice-container .copy-container h2, .notice-container .copy-container h3, .notice-container .copy-container h4, .notice-container .copy-container h5, .notice-container .copy-container h6
+    {
+        margin:0 0 30px 0;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1099px)
+{
+    .notice-container
+    {
+        padding:70px 0 62px 0;
+    }
+    .notice-container .copy-container h2, .notice-container .copy-container h3, .notice-container .copy-container h4, .notice-container .copy-container h5, .notice-container .copy-container h6
+    {
+        margin:0 0 30px 0;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .notice-container
+    {
+        padding:70px 0 62px 0;
+    }
+    .notice-container .copy-container h2, .notice-container .copy-container h3, .notice-container .copy-container h4, .notice-container .copy-container h5, .notice-container .copy-container h6
+    {
+        margin:0 0 30px 0;
+    }
+}

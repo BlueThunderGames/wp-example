@@ -1,0 +1,79 @@
+.fund-information-modal
+{
+    width:800px;
+    max-width:94% !important;
+    margin:0 auto;
+    background-color:#F7F6FB !important;
+    padding:72px 72px 34px 72px !important;
+    display:none;
+
+    .mfp-close 
+    {
+        display:none;
+    }
+    h2, h3, h4, h5, h6, p, ul li, ol li 
+    {
+        color:$greatGray;
+    }
+    h2, h3, h4, h5, h6
+    {
+        margin:0 0 38px 0;
+    }
+    .btn-list
+    {
+        display:flex;
+        margin:55px 0 0 0;
+
+        li 
+        {
+            display:block;
+            list-style:none;
+            margin-right:12px;
+        }
+        .btn-transp 
+        {
+            color:$greatGray;
+        }
+        .btn-transp::before 
+        {
+            border:1px solid $greatGray;
+        }
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .fund-information-modal
+    {
+        padding:30px 35px 10px 35px !important;
+    }
+    .fund-information-modal .btn-list
+    {
+        margin:30px 0 0 0;
+    }
+    .fund-information-modal h2, .fund-information-modal h3, .fund-information-modal h4, .fund-information-modal h5, .fund-information-modal h6
+    {
+        margin:0 0 30px 0;
+    }
+}
+@media screen and (max-width:500px)
+{
+    .fund-information-modal
+    {
+        padding:30px 25px 10px 25px !important;
+    }
+    .fund-information-modal .btn-list
+    {
+        display:block;
+        
+        li 
+        {
+            margin-right:0;
+            margin-bottom:12px;
+
+            a.btn 
+            {
+                margin-bottom:0;
+            }
+        }
+    }
+}

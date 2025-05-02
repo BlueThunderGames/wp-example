@@ -1,0 +1,88 @@
+.pdfs-container 
+{
+    .pdfs-wrapper 
+    {
+        padding-top:83px;
+
+        .pdf-list 
+        {
+            margin:0 0 0 0;
+
+            >li 
+            {
+                display:block;
+                list-style:none;   
+                margin-bottom:44px;
+                min-height:76px;
+
+                a 
+                {
+                    @include fontReg;
+                    @include transition;
+                    display:inline-block;
+                    position:relative;
+                    padding-left:36px;
+                    color:$greatGray;
+                    font-size:18px;
+                    line-height:1.4;
+                    text-decoration:none;
+
+                    .pdf-icon
+                    {
+                        display:block;
+                        line-height:inherit;
+                        font-size:inherit;
+                        position:absolute;
+                        top:50%;
+                        left:0;
+                        transform:translateY(-50%);
+
+                        svg 
+                        {
+                            vertical-align: top;
+                        }
+                        svg path 
+                        {
+                            @include transition;
+                        }
+                    }
+                }
+                a:hover 
+                {
+                    color:$darkTeal;
+                    text-decoration: underline;
+                    
+                    svg path 
+                    {
+                        stroke:$darkTeal;
+                    }
+                }
+            }
+        }
+        .left-col 
+        {
+            padding-right:25px;
+        }
+        .right-col 
+        {
+            padding-left:25px;
+        }
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .pdfs-container .pdfs-wrapper .left-col
+    {
+        width:100%;
+        padding-right:0;
+    }
+    .pdfs-container .pdfs-wrapper .right-col
+    {
+        width:100%;
+        padding-left:0;
+    }
+    .pdfs-container .pdfs-wrapper .pdf-list > li
+    {
+        min-height:30px;
+    }
+}

@@ -1,0 +1,321 @@
+.two-column-chart-container
+{
+    padding:118px 0 0 0;
+    position:relative;
+
+    .grid-container 
+    {
+        position:relative;
+        z-index:7;
+    }
+    h4 
+    {
+        text-align:center;
+        margin:0 0 37px 0;
+    }
+    .mobile-charts 
+    {
+        display:none;
+
+        .right-chart .chart-item::after
+        {
+            display:none;
+        }
+    }
+    .left-chart 
+    {
+        padding-right:86px;
+
+        .chart-item 
+        {
+            background-color:$greatGray;
+            border-radius: 0px 0px 0px 50px;
+        }
+    }
+    .right-chart 
+    {
+        padding-left:86px;
+
+        .chart-item 
+        {
+            background-color:$robin;
+            border-radius: 0px 0px 50px 0px;
+            text-align:center;
+            position:relative;
+
+            p 
+            {
+                color:$greatGray;
+            }
+        }
+        .chart-item::after 
+        {
+            transition:opacity 1.0s;
+            content:"";
+            display:block;
+            z-index:-1;
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            border-radius: 0px 0px 50px 0px;
+            opacity: 0.6;
+            background: linear-gradient(123deg, #F5426E 17.74%, #81D8D0 57.46%);
+            filter: blur(40px);
+        }
+        .chart-item.faded::after 
+        {
+            opacity:0;
+        }
+    }
+    .final-line 
+    {
+        @include transition;
+        width:1px;
+        height:0;
+        position:absolute;
+        top:52px;
+        left:50%;
+        background-color: #A7A9B4;
+        transform:translateX(-50%);
+    }
+    .chart-item 
+    {
+        position:relative;
+        min-height:102px;
+        display:table;
+        width:100%;
+        padding:0 52px;
+
+        .item-copy 
+        {
+            display:table-cell;
+            vertical-align: middle;
+            text-align:center;
+        }
+        p 
+        {
+            margin:0 0 0 0;
+        }
+    }
+    .chart-row 
+    {
+        position:relative;
+        margin-bottom:48px;
+    }
+    .chart-row:last-child 
+    {
+        margin-bottom:0;
+    }
+    .chart-row .line 
+    {
+        @include transition;
+        display:block;
+        width:172px;
+        height:1px;
+        position:absolute;
+        transform: translateY(-50%);
+        top:50%;
+        left:50%;
+        margin-left:-86px;
+        background-color:#A7A9B4;
+    }
+    .charts-wrapper 
+    {
+        position:relative;
+        overflow:hidden;
+        padding-bottom:200px;
+    }
+    .desktop-charts 
+    {
+        .chart-row 
+        {
+            .chart-item 
+            {
+                opacity:0;
+            }
+            .line 
+            {
+                width:0;
+            }
+        }
+    }
+}
+@media screen and (min-width:1296px) and (max-width:1600px)
+{
+    .two-column-chart-container
+    {
+        padding:88px 0 0 0;
+    }
+    .two-column-chart-container .chart-row
+    {
+        margin-bottom:38px;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1295px)
+{
+    .two-column-chart-container
+    {
+        padding:88px 0 0 0;
+    }
+    .two-column-chart-container .chart-row
+    {
+        margin-bottom:38px;
+    }
+    .two-column-chart-container .chart-item
+    {
+        padding:0 30px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1099px)
+{
+    .two-column-chart-container
+    {
+        padding:88px 0 0 0;
+    }
+    .two-column-chart-container .chart-row
+    {
+        margin-bottom:38px;
+    }
+    .two-column-chart-container .chart-item
+    {
+        padding:0 30px;
+    }
+    .two-column-chart-container .left-chart
+    {
+        padding-right:50px;
+    }
+    .two-column-chart-container .right-chart
+    {
+        padding-left:50px;
+    }
+    .two-column-chart-container .chart-row .line
+    {
+        width:100px;
+        margin-left:-50px;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .two-column-chart-container
+    {
+        padding:88px 0 0 0;
+    }
+    .two-column-chart-container .charts-wrapper
+    {
+        padding-bottom:100px;
+    }
+    .two-column-chart-container .chart-row
+    {
+        margin-bottom:38px;
+    }
+    .two-column-chart-container .chart-item
+    {
+        padding:0 30px;
+    }
+    .two-column-chart-container .left-chart
+    {
+        padding-right:50px;
+    }
+    .two-column-chart-container .right-chart
+    {
+        padding-left:50px;
+    }
+    .two-column-chart-container .chart-row .line
+    {
+        width:100px;
+        margin-left:-50px;
+    }
+}
+@media screen and (min-width:721px) and (max-width:899px)
+{
+    .two-column-chart-container .desktop-charts
+    {
+        display:none;
+    }
+    .two-column-chart-container .mobile-charts
+    {
+        display:block;
+        padding-bottom:80px;
+    }
+    .two-column-chart-container .chart-row .line
+    {
+        display:none;
+    }
+    .two-column-chart-container .left-chart
+    {
+        padding-right:0;
+        width:100%;
+        margin-bottom:45px;
+    }
+    .two-column-chart-container .right-chart
+    {
+        padding-left:0;
+        width:100%;
+    }
+    .two-column-chart-container .chart-item
+    {
+        margin:0 0 30px 0;
+    }
+}
+@media screen and (min-width:560px) and (max-width:720px)
+{
+    .two-column-chart-container .desktop-charts
+    {
+        display:none;
+    }
+    .two-column-chart-container .mobile-charts
+    {
+        display:block;
+    }
+    .two-column-chart-container .chart-row .line
+    {
+        display:none;
+    }
+    .two-column-chart-container .left-chart
+    {
+        padding-right:0;
+        width:100%;
+        margin-bottom:45px;
+    }
+    .two-column-chart-container .right-chart
+    {
+        padding-left:0;
+        width:100%;
+    }
+    .two-column-chart-container .chart-item
+    {
+        margin:0 0 30px 0;
+    }
+}
+@media screen and (max-width:559px)
+{
+    .two-column-chart-container .desktop-charts
+    {
+        display:none;
+    }
+    .two-column-chart-container .mobile-charts
+    {
+        display:block;
+    }
+    .two-column-chart-container .chart-row .line
+    {
+        display:none;
+    }
+    .two-column-chart-container .left-chart
+    {
+        padding-right:0;
+        width:100%;
+        margin-bottom:45px;
+    }
+    .two-column-chart-container .right-chart
+    {
+        padding-left:0;
+        width:100%;
+    }
+    .two-column-chart-container .chart-item
+    {
+        margin:0 0 30px 0;
+    }
+}

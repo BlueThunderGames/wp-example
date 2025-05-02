@@ -1,0 +1,288 @@
+.hover-cards-container
+{
+    padding:100px 0 100px 0;
+    overflow:hidden;
+    
+    .upper-copy
+    {
+        margin:0 0 104px 0;
+    }
+    .hover-card 
+    {
+        width:48.6%;
+        margin-right:2.8%;
+        position:relative;
+        overflow:hidden;
+
+        span 
+        {
+            font-family:inherit;
+            font-size:inherit;
+            color:inherit;
+            font-weight:inherit;
+            text-transform: none;
+        }
+        .card-line
+        {
+            position:absolute;
+            z-index:1;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+            margin-top:95px;
+        }
+        .card-table
+        {
+            display:table;
+            width:100%;
+            height:487px;
+            position:relative;
+            z-index:3;
+
+            .card-title
+            {
+                @include mont;
+                transition:all .5s ease;
+                font-weight:200;
+                font-size:56px;
+                line-height:1.3;
+                letter-spacing:-1px;
+                display:block;
+                color:#F7F6FB;
+            }
+            .card-copy
+            {
+                transition:all .5s ease;
+                display:none;
+                padding:50px 0 0 0;
+
+                p, ul li, ol li 
+                {
+                    transition:all 1s ease;
+                }
+            }
+            .card-table-cell 
+            {
+                transition:all .5s ease;
+                padding:0 70px;
+                display:table-cell;
+                vertical-align: middle;
+                text-align:center;
+            }
+        }
+        .card-bg
+        {
+            transition:all .5s ease;
+            position:absolute;
+            z-index:2;
+            top:100%;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color:$robin;
+        }
+    }
+    .hover-card:last-child 
+    {
+        margin-right:0;
+    }
+    .hover-card:nth-child(odd)
+    {
+        border-radius: 0px 200px;
+        border: 1px solid $robin;
+        background: $raven;
+
+        .card-bg 
+        {
+            border-radius: 0px 200px;
+        }
+    }
+    .hover-card:nth-child(even)
+    {
+        border-radius:200px 0;
+        border: 1px solid $robin;
+        background: $raven;
+
+        .card-bg 
+        {
+            border-radius:200px 0;
+        }
+    }
+    .hover-card:hover 
+    {
+       .card-table .card-title 
+       {
+            color:$raven;
+       }
+       .card-table .card-copy 
+       {
+            display:block;
+
+            p, ul li, ol li 
+            {
+                color:$raven;
+            }
+       } 
+       .card-bg 
+       {
+            top:0;
+       }
+    }
+}
+@media screen and (min-width:1296px) and (max-width:1600px)
+{
+    .hover-cards-container
+    {
+        padding:60px 0 60px 0;
+    }
+    .hover-cards-container .upper-copy
+    {
+        margin:0 0 75px 0;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1295px)
+{
+    .hover-cards-container
+    {
+        padding:60px 0 60px 0;
+    }
+    .hover-cards-container .upper-copy
+    {
+        margin:0 0 75px 0;
+    }
+    .hover-cards-container .hover-card .card-table .card-table-cell
+    {
+        padding:0 40px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1099px)
+{
+    .hover-cards-container
+    {
+        padding:60px 0 60px 0;
+    }
+    .hover-cards-container .upper-copy
+    {
+        margin:0 0 75px 0;
+    }
+    .hover-cards-container .hover-card .card-table .card-table-cell
+    {
+        padding:0 40px;
+    }
+    .hover-cards-container .hover-card .card-table .card-title
+    {
+        font-size:42px;
+    }
+    .hover-cards-container .hover-card .card-table .card-copy p, .hover-cards-container .hover-card .card-table .card-copy ul li, .hover-cards-container .hover-card .card-table .card-copy ol li
+    {
+        font-size:16px;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .hover-cards-container
+    {
+        padding:60px 0 60px 0;
+    }
+    .hover-cards-container .upper-copy
+    {
+        margin:0 0 50px 0;
+    }
+    .hover-cards-container .hover-card .card-table .card-table-cell
+    {
+        padding:0 40px;
+    }
+    .hover-cards-container .hover-card .card-table .card-title
+    {
+        font-size:42px;
+    }
+    .hover-cards-container .hover-card .card-table .card-copy p, .hover-cards-container .hover-card .card-table .card-copy ul li, .hover-cards-container .hover-card .card-table .card-copy ol li
+    {
+        font-size:16px;
+    }
+}
+@media screen and (min-width:721px) and (max-width:899px)
+{
+    .hover-cards-container .hover-card .card-table .card-table-cell
+    {
+        padding:0 20px;
+    }
+    .hover-cards-container .hover-card .card-table .card-title
+    {
+        font-size:32px;
+    }
+    .hover-cards-container .hover-card .card-table .card-copy p, .hover-cards-container .hover-card .card-table .card-copy ul li, .hover-cards-container .hover-card .card-table .card-copy ol li
+    {
+        font-size:14px;
+    }
+}
+@media screen and (min-width:560px) and (max-width:720px)
+{
+    .hover-cards-container .hover-card
+    {
+        width:100%;
+        margin-right:0;
+    }
+    .hover-cards-container .hover-card:nth-child(1) 
+    {
+        margin-bottom:30px;
+    }
+    .hover-cards-container .hover-card .card-table .card-table-cell
+    {
+        padding:0 30px;
+    }
+    .hover-cards-container .hover-card .card-table .card-title
+    {
+        font-size:32px;
+        color:$raven;
+    }
+    .hover-cards-container .hover-card .card-table .card-copy
+    {
+        padding:25px 0 0 0;
+        display:block;
+    }
+    .hover-cards-container .hover-card .card-table .card-copy p, .hover-cards-container .hover-card .card-table .card-copy ul li, .hover-cards-container .hover-card .card-table .card-copy ol li
+    {
+        font-size:14px;
+        color:$raven;
+    }
+    .hover-cards-container .hover-card .card-bg
+    {
+        top:0;
+    }
+}
+@media screen and (max-width:559px)
+{
+    .hover-cards-container .hover-card
+    {
+        width:100%;
+        margin-right:0;
+    }
+    .hover-cards-container .hover-card:nth-child(1) 
+    {
+        margin-bottom:30px;
+    }
+    .hover-cards-container .hover-card .card-table .card-table-cell
+    {
+        padding:0 30px;
+    }
+    .hover-cards-container .hover-card .card-table .card-title
+    {
+        font-size:32px;
+        color:$raven;
+    }
+    .hover-cards-container .hover-card .card-table .card-copy
+    {
+        padding:25px 0 0 0;
+        display:block;
+    }
+    .hover-cards-container .hover-card .card-table .card-copy p, .hover-cards-container .hover-card .card-table .card-copy ul li, .hover-cards-container .hover-card .card-table .card-copy ol li
+    {
+        font-size:14px;
+        color:$raven;
+    }
+    .hover-cards-container .hover-card .card-bg
+    {
+        top:0;
+    }
+}

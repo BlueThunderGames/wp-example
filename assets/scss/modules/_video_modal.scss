@@ -1,0 +1,109 @@
+.video-modal-container
+{
+    .video 
+    {
+        display:block;
+        position:relative;
+        padding-top:352px;
+        padding-bottom:352px;
+        background-position:center top;
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    .video-shade 
+    {
+        display:block;
+        position:absolute;
+        z-index:2;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity:.4;
+        background-color:#1A1A1A;
+    }
+    .video-icon 
+    {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        z-index:3;
+        
+    }
+    .watch-copy 
+    {
+        @include mont;
+        @include fontReg;
+        @include uppercase;
+        font-size:16px;
+        color:#D0D1DB;
+        line-height:1.4;
+        letter-spacing:4px;
+        text-align:center;
+        z-index:3;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        z-index:3;
+        margin-top:100px;
+    }
+
+}
+@media screen and (min-width:1296px) and (max-width:1600px)
+{
+    .video-modal-container .video
+    {
+        padding-top:300px;
+        padding-bottom:300px;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1295px)
+{
+    .video-modal-container .video
+    {
+        padding-top:300px;
+        padding-bottom:300px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1099px)
+{
+    .video-modal-container .video
+    {
+        padding-top:280px;
+        padding-bottom:280px;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .video-modal-container .video
+    {
+        padding-top:280px;
+        padding-bottom:280px;
+    }
+}
+@media screen and (min-width:721px) and (max-width:899px)
+{
+    .video-modal-container .video
+    {
+        padding-top:250px;
+        padding-bottom:250px;
+    }
+}
+@media screen and (min-width:560px) and (max-width:720px)
+{
+    .video-modal-container .video
+    {
+        padding-top:250px;
+        padding-bottom:250px;
+    }
+}
+@media screen and (max-width:559px)
+{
+    .video-modal-container .video
+    {
+        padding-top:200px;
+        padding-bottom:200px;
+    }
+}

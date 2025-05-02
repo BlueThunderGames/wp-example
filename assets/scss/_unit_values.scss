@@ -1,0 +1,185 @@
+.fund-sheets-container.unit-values-container
+{
+    .crumb-wrapper 
+    {
+        flex-grow:1;
+    }
+    #breadcrumbs
+    {
+        display:flex;
+        padding-bottom:17px;
+    }
+    #breadcrumbs .final-crumb 
+    {
+        display:inline-block;
+        margin-left:5px;
+    }
+    .values-data-wrapper
+    {
+        padding-top:92px;
+
+        .heading_uv 
+        {
+            @include mont;
+            @include fontBold;
+            @include uppercase;
+            font-size:18px;
+            line-height:1.4;
+            letter-spacing:4px;
+            color:$greatGray;
+            margin:0 0 24px 0;
+
+            span 
+            {
+                @include mont;
+                @include fontBold;
+                @include uppercase;
+                font-size:18px;
+                line-height:1.4;
+                letter-spacing:4px;
+                color:$greatGray;
+            }
+        }
+        .pone_c 
+        {
+            display:flex;
+            margin-bottom:20px;
+
+            span 
+            {
+                @include mont;
+                @include fontReg;
+                line-height:1.0;
+                font-size:16px;
+                text-align:center;
+                color:$greatGray;
+            }
+            .cfour
+            {
+                width:9%;
+            }
+            .cfour.disno 
+            {
+                display:none;
+            }
+            .pfour_c 
+            {
+                @include mont;
+                @include fontReg;
+                line-height:1.0;
+                font-size:16px;
+                color:$greatGray;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                text-align:center;
+                border:1px solid #F7F6FB;
+                background-color:$screetch;
+                height:56px;
+            }
+            .pfour 
+            {
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                text-align:center;
+                border:1px solid #F7F6FB;
+                background-color:$snowy;
+                height:40px;
+            }
+        }
+        .pone_c.extra-space 
+        {
+            margin-bottom:72px;
+        }
+    }
+}
+@media screen and (min-width:1296px) and (max-width:1600px)
+{
+    .fund-sheets-container.unit-values-container .values-data-wrapper .pone_c.extra-space
+    {
+        margin-bottom:50px;
+    }
+    .fund-sheets-container.unit-values-container .values-data-wrapper
+    {
+        padding-top:60px;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1295px)
+{
+    .fund-sheets-container.unit-values-container .values-data-wrapper .pone_c.extra-space
+    {
+        margin-bottom:50px;
+    }
+    .fund-sheets-container.unit-values-container .values-data-wrapper
+    {
+        padding-top:60px;
+    }
+    .fund-sheets-container.unit-values-container .values-data-wrapper .pone_c .pfour_c, .fund-sheets-container.unit-values-container .values-data-wrapper .pone_c span
+    {
+        font-size:14px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1099px)
+{
+    .fund-sheets-container.unit-values-container .values-data-wrapper .pone_c.extra-space
+    {
+        margin-bottom:50px;
+    }
+    .fund-sheets-container.unit-values-container .values-data-wrapper
+    {
+        padding-top:60px;
+    }
+    .fund-sheets-container.unit-values-container .values-data-wrapper .pone_c .pfour_c, .fund-sheets-container.unit-values-container .values-data-wrapper .pone_c span
+    {
+        font-size:14px;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .fund-sheets-container.unit-values-container .values-data-wrapper .pone_c.extra-space
+    {
+        margin-bottom:50px;
+    }
+    .fund-sheets-container.unit-values-container .values-data-wrapper
+    {
+        padding-top:60px;
+    }
+    .fund-sheets-container.unit-values-container .values-data-wrapper .pone_c 
+    {
+        width:300px;
+        max-width:100%;
+        display:block;
+    }
+    .fund-sheets-container.unit-values-container .values-data-wrapper .pone_c .cfour
+    {
+        width:100%;
+        margin-bottom:32px;
+    }
+    .fund-sheets-container.unit-values-container #breadcrumbs
+    {
+        flex-wrap:wrap;
+    }
+    .fund-sheets-container.unit-values-container #breadcrumbs .final-crumb
+    {
+        width:100%;
+        margin-left:0;
+        padding-left:30px;
+    }
+    .fund-sheets-container.unit-values-container #breadcrumbs .final-crumb
+    {
+        display:none;
+    }
+}
+@media screen and (min-width:721px) and (max-width:899px)
+{
+
+}
+@media screen and (min-width:560px) and (max-width:720px)
+{
+
+}
+@media screen and (max-width:559px)
+{
+
+}

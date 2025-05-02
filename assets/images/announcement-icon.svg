@@ -1,0 +1,21 @@
+<svg width="97" height="95" viewBox="0 0 97 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="97" height="95" fill="#111111"/>
+<g id="Announcement Bar - Open (Teal)" clip-path="url(#clip0_1367_2650)">
+<rect width="1620" height="1535" transform="translate(-201 -40)" fill="white"/>
+<g id="announcement bar">
+<rect id="Rectangle 1340" x="-201" y="-40" width="1621" height="185" fill="#336D81"/>
+<g id="b">
+<path id="Vector" d="M77.8372 79.0183C88.4204 77.0301 93.828 58.5352 89.9154 37.709C86.0028 16.8827 74.2517 1.61143 63.6685 3.59967C53.0852 5.58792 47.6776 24.0827 51.5902 44.909C55.5028 65.7353 67.254 81.0066 77.8372 79.0183Z" stroke="#81D8D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M69.2353 77.1044C45.9632 62.5629 29.499 70.3535 21.3666 70.3535C10.1151 70.3535 1 61.2384 1 49.9869C1 38.7354 10.1151 29.6772 21.3666 29.6203C33.1878 29.5633 49.3814 18.2976 56.6593 8.11426" stroke="#81D8D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M18.458 79.0699L23.7277 89.595C24.9668 92.059 27.4734 93.6114 30.2365 93.6114H45.5755C47.7831 93.6114 49.1931 91.2472 48.1249 89.3102L41.7443 77.6172" stroke="#81D8D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M26.2948 29.0225C26.2948 29.0225 21.367 44.1621 30.0975 57.2509" stroke="#81D8D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M58.4673 26.9283C65.5458 25.4471 72.8948 31.8847 74.8745 41.3131C76.8542 50.7416 72.7239 59.6004 65.6597 61.0958" stroke="#81D8D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1367_2650">
+<rect width="1620" height="1535" fill="white" transform="translate(-201 -40)"/>
+</clipPath>
+</defs>
+</svg>

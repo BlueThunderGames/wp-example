@@ -1,0 +1,237 @@
+$w: #F7F6FB;
+
+.m-map {
+	padding: 3.125rem 0 5rem;
+
+	@media screen and (min-width: 767px) {
+		padding: 10rem 0 17.375rem;
+	}
+
+	&__head {
+		@media screen and (min-width: 767px) {
+			max-width: 80%;
+		}
+
+		h2 {
+			margin-bottom: clamp(1.5625rem, calc(1.5625rem + ((1vw - 0.234375rem) * 1.6575)), 2.5rem);
+		}
+
+		p {
+			color: $w;
+			font-size: 1.25rem;
+			margin-bottom: clamp(2.5rem, calc(2.5rem + ((1vw - 0.234375rem) * 4.9724)), 5.3125rem);
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 0.9375rem;
+		flex-wrap: wrap;
+		align-items: center;
+		margin-bottom: 4.6875rem;
+
+		.btn {
+			@include mont;
+			@include weirdRound;
+			@include fontSemi;
+			@include uppercase;
+			font-size: clamp(0.8125rem, calc(0.8125rem + (0.9375 - 0.8125) * ((100vw - 23.4375rem) / (80 - 23.4375))), 0.9375rem);
+			line-height: 1.4;
+			display: inline-block;
+			text-align: center;
+			padding: 0.75rem 1.5rem;
+			position: relative;
+			overflow: hidden;
+			border: 0.0625rem solid transparent;
+			z-index: 4;
+			border-color: $screetch;
+			color: $screetch;
+			cursor: pointer;
+
+			&::before {
+				background-color: transparent;
+			}
+
+			&::after {
+				background-color: $screetch;
+			}
+
+			&:hover {
+				color: #2F3942;
+			}
+
+			&.active-btn {
+				border-color: $robin;
+				color: #2F3942;
+
+				&::after {
+					background-color: $robin;
+					left: 0;
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		gap: 0.9375rem;
+		flex-direction: column;
+
+		@media screen and (min-width: 767px) {
+			flex-direction: row;
+		}
+	}
+
+	&__img {
+		width: 100%;
+
+		@media screen and (min-width: 767px) {
+			width: 65%;
+			flex: 0 0 65%;
+		}
+
+		@media screen and (min-width: 1280px) {
+			width: 75%;
+			flex: 0 0 75%;
+		}
+
+		path,
+		polygon {
+			fill: #2f3942;
+			transition: all 0.4s ease;
+			cursor: pointer;
+
+			&.active {
+				fill: $robin;
+			}
+		}
+
+		&.active {
+
+			path,
+			polygon {
+				fill: $robin;
+			}
+		}
+	}
+
+	&__content {
+		width: 100%;
+		position: relative;
+
+		@media screen and (min-width: 767px) {
+			width: 35%;
+			flex: 0 0 35%;
+		}
+
+		@media screen and (min-width: 1280px) {
+			width: 25%;
+			flex: 0 0 25%;
+		}
+
+		.map-person {
+			position: relative;
+			display: none;
+			margin-top: 1.25rem;
+			margin: 0 auto;
+			width: 100%;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.4s ease;
+
+			@media screen and (min-width: 450px) {
+				max-width: 18.75rem;
+			}
+
+			@media screen and (min-width: 767px) {
+				display: block;
+				position: absolute;
+				top: 2.25rem;
+				left: 0;
+				margin: 0;
+				max-width: 100%;
+			}
+
+			&__img {
+				position: relative;
+				margin-bottom: 1.25rem;
+				height:300px;
+
+				img {
+					width: 100%;
+					position: relative;
+					z-index: 2;
+					height: 18.75rem;
+					object-fit: cover;
+					object-position: top;
+					border-radius: 0 0 2.5rem 0;
+					aspect-ratio: 1 / 1;
+				}
+
+				.person-img-inner
+				{
+					width:100%;
+					position:absolute;
+					left:0;
+					bottom:0;
+					height:300px;
+					background-repeat:no-repeat;
+					background-size:cover;
+					border-radius: 0 0 2.5rem 0;
+					background-position:center top;
+				}
+				&::before {
+					content: '';
+					width: 100%;
+					position: absolute;
+					bottom: 0;
+					height: 11.25rem;
+					background-color: $robin;
+					border-radius: 2.5rem 0 2.5rem 0;
+				}
+			}
+
+			h6 {
+				@include mont;
+				color: $w;
+				font-size: clamp(1.25rem, calc(1.25rem + ((1vw - 0.234375rem) * 0.663)), 1.625rem);
+				margin-bottom: 0.625rem;
+			}
+
+			span {
+				@include mont;
+				font-size: clamp(0.875rem, calc(0.875rem + ((1vw - 0.234375rem) * 0.221)), 1rem);
+				color: $w;
+				font-style: italic;
+				font-weight: 400;
+			}
+
+			p {
+				@include mont;
+				text-align: center;
+				color: $robin;
+				text-transform: uppercase;
+				font-size: 1.125rem;
+				font-weight: 700;
+				margin-bottom: 1.5625rem;
+
+				@media screen and (min-width: 767px) {
+					text-align: right;
+				}
+			}
+			.map-person-btn {
+				padding-top:35px;
+			}
+
+			&.active-person {
+				opacity: 1;
+				visibility: visible;
+
+				@media screen and (max-width: 767px) {
+					display: block;
+				}
+			}
+		}
+	}
+}

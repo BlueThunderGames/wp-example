@@ -1,0 +1,160 @@
+.scroll-panels-container
+{
+    position:relative;
+    z-index:4;
+
+    .scroll-panels-inner
+    {
+        position:relative;
+        padding:112px 0 220px 0;
+    }
+    .grid-x 
+    {
+        justify-content: flex-end;
+    }
+    .panel-inner
+    {
+        width:680px;
+        max-width:100%;
+    }
+    .btn 
+    {
+        margin-top:13px;
+    }
+    .scroll-panels-wrapper
+    {
+        position:relative;
+        z-index:3;
+    }
+    .bubble 
+    {
+        top:30px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .scroll-panel
+    {
+        position:relative;
+        border-top-left-radius:200px;
+        border-bottom-right-radius:200px;
+        /*
+        top:-172px;
+        margin-bottom:-172px;
+        */
+        padding:176px 100px 264px 96px;
+        box-shadow: 4px 4px 50px 0px #00000040;
+
+        h2 
+        {
+            margin:0 0 52px 0;
+        }
+        span 
+        {
+            text-transform: none;
+            font-family:inherit;
+            font-size:inherit;
+            line-height:inherit;
+            font-weight:inherit;
+        }
+        span, h1, h2, h3, h4, h5, h6, p, ul li, ol li 
+        {
+            color:#F7F6FB;
+        }
+    }
+    .scroll-panel.dark 
+    {
+        span, h1, h2, h3, h4, h5, h6, p, ul li, ol li 
+        {
+            color:$greatGray;
+        }
+    }
+    .scroll-panel:nth-child(1)
+    {
+        top:0;
+        margin-bottom:0;
+    }
+}
+@media screen and (min-width:1296px) and (max-width:1600px)
+{
+    .scroll-panels-container .scroll-panels-inner
+    {
+        padding:70px 0 110px 0;
+    }
+    .scroll-panels-container .scroll-panel
+    {
+        padding:100px 119px 250px 146px;
+    }
+    .scroll-panels-container .scroll-panel:last-child 
+    {
+        padding-bottom:100px;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1295px)
+{
+    .scroll-panels-container .scroll-panels-inner
+    {
+        padding:70px 0 110px 0;
+    }
+    .scroll-panels-container .scroll-panel
+    {
+        padding:100px 119px 250px 110px;
+    }
+    .scroll-panels-container .scroll-panel:last-child 
+    {
+        padding-bottom:100px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1099px)
+{
+    .scroll-panels-container .scroll-panels-inner
+    {
+        padding:70px 0 110px 0;
+    }
+    .scroll-panels-container .scroll-panel
+    {
+        padding:100px 119px 250px 75px;
+    }
+    .scroll-panels-container .scroll-panel:last-child 
+    {
+        padding-bottom:100px;
+    }
+}
+@media screen and (max-width:1024px)
+{
+    .scroll-panels-container .scroll-panels-inner
+    {
+        padding:30px 0 60px 0;
+
+        p
+        {
+            text-align:left !important;
+        }
+    }
+    .scroll-panels-container .scroll-panel
+    {
+        padding:62px 40px 205px 40px;
+        border-radius:100px 0;
+        top:-172px;
+        margin-bottom:-172px;
+    }
+    .scroll-panels-container .scroll-panel:last-child 
+    {
+        padding-bottom:60px;
+    }
+    .scroll-panels-container .scroll-panel h2
+    {
+        margin:0 0 18px 0;
+    }
+}
+@media screen and (min-width:721px) and (max-width:899px)
+{
+
+}
+@media screen and (min-width:560px) and (max-width:720px)
+{
+
+}
+@media screen and (max-width:559px)
+{
+
+}
